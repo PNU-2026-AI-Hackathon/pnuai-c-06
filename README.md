@@ -1,237 +1,339 @@
-# Template for Hackathon
-이 레파지토리는 참여자들이 해커톤 결과물을 위한 레파지토리 생성시에 참고할 내용들을 담고 있습니다.
-1. 레파지토리 생성
-2. 레파지토리 구성
-3. README.md 가이드라인
-4. README.md 작성팁
-<br/>
+# PNU 밥묵자 🍚
+> 부산대 학생식당 · 지역상권 통합 웨이팅 플랫폼
 
+**팀명:** 전전컴 | **트랙:** 창업트랙(PAI+X) | **제7회 PNU 창의융합AI해커톤**
 
-## 1. 레파지토리 생성
-- https://classroom.github.com/a/VDJSvmVC
-- 위 Github Classroom 링크에 접속해 본인 조의 github 레파지토리를 생성하세요.
-<img width="1125" height="790" alt="image" src="https://github.com/user-attachments/assets/7377b191-d36a-43bd-ba16-9742be532ecf" />
+---
 
+## 1. 프로젝트 소개
 
-- 레파지토리 생성 시 팀 이름은 `{트랙}-{팀번호}-{팀명}` 형식으로 생성하세요.
-- 트랙 란에는 융합트랙은 'A', 지정과제 트랙은 'B', 창업트랙은 'C'를 기입합니다.
-- 예를 들어, 융합트랙 3조의 팀명은 `A-03-ExampleTeamName` 입니다.
-- 이 경우 `PNUAI-A-03-ExampleTeamName`이라는 이름으로 레포지토리가 생성됩니다.
-<br/>
+### 1.1. 개발배경 및 필요성
 
+#### 국내외 시장 현황
 
+**① 스마트 캠퍼스 구축을 위한 디지털 전환 시도**
+서울시립대, 전남대 등 주요 대학들을 중심으로 모바일 사전 주문, 결제 및 전자 식권 시스템 도입이 시작되고 있다. 이는 기존 현장 키오스크 중심의 결제 방식을 모바일 환경으로 전환하려는 스마트 캠퍼스 구축의 일환이다.
 
-## 2. 레파지토리 구성
-- 레파지토리 내에 `README.md` 파일 생성하고 아래의 가이드라인과 작성팁을 참고하여 파일을 작성하세요.
-- 레파지토리 내에 `docs` 폴더를 생성하고 폴더 내에는 과제 수행 하면서 작성한 각종 보고서, 발표자료를 올려둡니다.
-- 그 밖에 레파지토리의 폴더 구성은 과제 결과물에 따라 자유롭게 구성하되 가급적 코드의 목적이나 기능에 따라 폴더를 나누어 구성하세요.  
-<br/>
+**② 외식업계 디지털 웨이팅의 보편화**
+'캐치테이블', '테이블링' 등 IT 기반 예약 및 웨이팅 플랫폼 이용자 수가 3년 만에 약 **185% 증가**했다. 특히 트렌드에 민감한 20대 대학생 층을 중심으로 스마트폰을 활용한 대기 시간 관리가 일상적인 외식 문화로 정착되었다. 주요 플랫폼(테이블링 기준)의 누적 가입자는 570만 명, 제휴 매장은 4,000개소를 상회한다.
 
+**③ 부산대 상권 현황 및 정책적 추진 배경**
+2024년 기준 부산대 앞 상권은 부산 내 주요 상권 중 하나이나, 최근 공실률이 **23.4%**에 달하는 등 상권의 재구조화가 진행 중이다. 금정구는 2026년부터 5년간 약 60억 원 규모의 '부산대학로 상권 활성화 사업'을 추진하고 있다.
 
-## 3. README.md 가이드라인
-- README 파일 작성시에 아래의 5가지 항목의 내용은 필수적으로 포함해야 합니다.
-- 아래의 7가지 항목이외에 프로젝트의 이해를 돕기위한 내용을 추가해도 됩니다.
-- `SAMPLE_README.md`가 단순한 형태의 예제이니 참고하세요.
-```markdown
-### 1. 프로젝트 소개
-#### 1.1. 개발배경 및 필요성
-> 프로젝트를 실행하게 된 배경 및 필요성을 작성하세요.
+#### 부산대학교 학생식당 및 금정구 식당 문제점
 
-#### 1.2. 개발 목표 및 주요 내용
-> 프로젝트의 목표 및 주요 내용을 작성하세요.
+- **문제 1:** 학생들은 직접 가보기 전까지 대기 인원이나 예상 대기 시간을 알 수 없어 시간 낭비 발생
+- **문제 2:** 현장 구매 줄과 식권 구매 후 배식 대기 줄이 혼동되어 불편 발생
+- **문제 3:** 학생들이 주변 식당 정보를 쉽게 비교하거나 웨이팅할 수 있는 부산대 맞춤형 플랫폼 부족
 
-#### 1.3. 세부내용
-> 위 내용을 작성하세요.
+### 1.2. 개발 목표 및 주요 내용
 
-#### 1.4. 기존 서비스 대비 차별성
-> 위 내용을 작성하세요.
+본 프로젝트의 목표는 부산대학교 학생들의 학식 이용 불편을 해소하고, 부산대 인근 지역상권과 학생을 연결하는 **캠퍼스 맞춤형 통합 웨이팅 플랫폼**을 개발하는 것이다.
 
-#### 1.5. 사회적가치 도입 계획
-> 위 내용을 작성하세요.
+| 핵심 기능 | 설명 |
+|---|---|
+| 통합 웨이팅 플랫폼 | 학식 및 주변 식당의 실시간 대기 현황 정보 제공 |
+| 디지털 체크인 | 모바일 QR 식권 및 대기번호 발급으로 현장 혼잡도 최소화 |
+| 상권 활성화 기능 | 단과대별 제휴 혜택 노출 및 인근 식당 원격 웨이팅·쿠폰 시스템 |
 
+#### 기대효과
 
-### 2. 상세설계
-#### 2.1. 시스템 구성도
-> 시스템 구성도(infra, front, back등의 node 간의 관계)의 사진을 삽입하세요.
+- **편의성:** 대기 시간 사전 확인으로 공강 시간 활용 최적화 및 식사 선택권 확대
+- **운영 효율:** 현장 혼잡 완화 및 데이터 기반 수요 예측(AI 예측 모델) 가능
+- **지역 상생:** 학생 소비를 지역 상권으로 유도하여 부산대학로 경제 활성화 기여
+- **데이터 자산:** 축적된 소비 데이터를 활용한 맞춤형 복지 및 로컬 마케팅 확장
 
-#### 2.1. 사용 기술
-> 스택 별(backend, frontend, designer등) 사용한 기술 및 버전을 작성하세요.
-> 
-> ex) React.Js - React14, Node.js - v20.0.2
-> (필수)활용한 생성형 AI, AI 코딩 도구에 대해서도 기술하세요.
+### 1.3. 세부내용
 
-### 3. 개발결과
-#### 3.1. 전체시스템 흐름도
-> 위 내용을 작성하세요.
+#### 사용자별 요구사항
 
-#### 3.2. 기능설명
-> 각 페이지 마다 사용자의 입력의 종류와 입력에 따른 결과 설명 및 시연 영상.
-> 
-> ex. 로그인 페이지:
-> 
-> - 이메일 주소와 비밀번호를 입력하면 입력창에서 유효성 검사가 진행됩니다.
-> 
-> - 요효성 검사를 통과하지 못한 경우, 각 경고 문구가 입력창 하단에 표시됩니다.
->   
-> - 유효성 검사를 통과한 경우, 로그인 버튼이 활성화 됩니다.
->   
-> - 로그인 버튼을 클릭 시, 입력한 이메일 주소와 비밀번호에 대한 계정이 있는지 확인합니다.
->   
-> - 계정이 없는 경우, 경고문구가 나타납니다.
->
-> (영상)
+**학생 및 교직원**
+- 학생식당의 대기 인원, 예상 대기 시간, 메뉴, 운영 시간 확인
+- 모바일 식권 구매와 대기번호 발급
+- 주변 제휴 식당의 메뉴, 위치, 가격대, 할인 정보, 대기 현황 확인 및 원격 웨이팅 신청
 
-#### 3.3. 기능명세서
-> 개발한 제품에 대한 기능명세서를 작성해 제출하세요.
-> 
-> 노션 링크, 한글 문서, pdf 파일, 구글 스프레드 시트 등...
+**학생식당 운영자**
+- 실시간 대기자 수와 호출 번호 관리
+- QR코드 또는 대기번호를 통한 모바일 식권 구매 여부 확인
+- 메뉴와 운영 정보 등록·수정 및 시간대별 이용 현황 확인
 
-#### 3.4. 디렉토리 구조
-> 위 레포지토리의 디렉토리 구조를 설명하세요.
+**제휴 식당 운영자**
+- 식당 정보, 메뉴, 운영 시간, 대기 가능 여부 등록·수정
+- 학생들의 웨이팅 신청 확인 및 호출
+- 학생 전용 쿠폰·이벤트 등록 및 방문자 수·웨이팅 이용 현황 확인
 
-#### 3.5 AI 도구 활용
-> AI 도구를 어떤 단계에서 어떻게 활용했는지, 어떤 성과가 도출되었는지 기술해주세요.
+### 1.4. 기존 서비스 대비 차별성
 
-### 4. 설치 및 사용 방법
-> 제품을 설치하기 위헤 필요한 소프트웨어 및 설치 방법을 작성하세요.
->
-> 제품을 설치하고 난 후, 실행 할 수 있는 방법을 작성하세요.
+| 구분 | 기존 방식 | PNU 밥묵자 |
+|---|---|---|
+| 대기 현황 | 직접 방문 전까지 알 수 없음 | 앱에서 실시간 확인 |
+| 식권 구매 | 현장 키오스크 (줄 혼동 발생) | 모바일 QR 식권 |
+| 서비스 범위 | 학식 또는 일반 외식 (분리) | 학식 + 지역 식당 통합 |
+| 대학 특화 | 없음 | 학번 인증, 단과대별 혜택 |
+| 지역 상생 | 없음 | 제휴 식당 원격 웨이팅·쿠폰 |
 
-### 5. 소개 및 시연 영상
-> 프로젝트에 대한 소개와 시연 영상을 넣으세요.
-> 프로젝트 소개 동영상을 교육원 메일(swedu@pusan.ac.kr)로 제출 이후 센터에서 부여받은 youtube URL주소를 넣으세요.
+테이블링, 캐치테이블과 같은 기존 웨이팅·예약 플랫폼은 일반 외식업장 중심으로 운영되어 대학 학생식당의 식권 구매, 배식 대기, 학식 메뉴 확인 등 캠퍼스 특화 기능을 제공하지 않는다. 본 서비스는 학식에 집중된 학생 수요를 주변 식당으로 자연스럽게 분산시키고, 지역 식당에는 학생 고객 유입과 홍보 효과를 제공하는 점에서 차별성이 있다.
 
-### 6. 팀 소개
-> 팀원 소개 & 구성원 별 역할 분담 & 간단한 연락처를 작성하세요.
+### 1.5. 사회적가치 도입 계획
 
-### 7. 해커톤 참여 후기
-> 팀원 별 해커톤 참여 후기를 작성하세요.
-```
-<br/>
+- **지역 상권 상생(ESG):** 높은 수수료의 대형 플랫폼 대신, 대학생-소상공인을 직접 연결하는 저비용 시스템 제공으로 지역 경제 생태계 회복 기여
+- **데이터 기반 운영 효율화:** 학식 수요 예측을 통해 무분별한 식재료 낭비를 줄이고 잔반 발생량 감소 (환경적 가치 실현)
+- **전공 역량 환원:** 전자공학과 및 반도체 전공 지식을 활용하여 저전력 IoT 단말기를 식당에 보급하는 기술을 통한 지역 문제 해결 모델 제시
 
+#### 성과창출 목표
 
-## 4. README.md 작성 팁
-- 마크다운 언어를 이용해 README.md 파일을 작성할 때 참고할 수 있는 마크다운 언어 문법을 공유합니다.
-- 다양한 예제와 보다 자세한 문법은 [이 문서](https://www.markdownguide.org/basic-syntax/)를 참고하세요.
+- **정량적 목표:** 런칭 후 1년 내 부산대학교 재학생 60% 이상 가입, 주변 상권 제휴 매장 100곳 이상 확보, 학식 현장 대기 시간 평균 30% 단축
+- **정성적 목표:** 대학가 상권 활성화 지표(매출 증대 및 공실률 완화) 기여, 부산대 학생들의 필수 생활 밀착형 플랫폼으로 자리매김
 
-### 4.1. 헤더 Header
-```
-# This is a Header 1
-## This is a Header 2
-### This is a Header 3
-#### This is a Header 4
-##### This is a Header 5
-###### This is a Header 6
-####### This is a Header 7 은 지원되지 않습니다.
-```
+---
 
-# This is a Header 1
-## This is a Header 2
-### This is a Header 3
-#### This is a Header 4
-##### This is a Header 5
-###### This is a Header 6
-####### This is a Header 7 은 지원되지 않습니다.
-<br />
+## 2. 상세설계
 
-### 4.2. 인용문 BlockQuote
-```
-> This is a first blockqute.
->	> This is a second blockqute.
->	>	> This is a third blockqute.
-```
-> This is a first blockqute.
->	> This is a second blockqute.
->	>	> This is a third blockqute.
-<br />
+### 2.1. 시스템 구성도
 
-### 4.3. 목록 List
-* **Ordered List**
-```
-1. first
-2. second
-3. third  
-```
-1. first
-2. second
-3. third
-<br />
+> (시스템 구성도 이미지 추가 예정)
 
-* **Unordered List**
-```
-* 하나
-  * 둘
+### 2.2. 사용 기술
 
-+ 하나
-  + 둘
+#### Frontend
+| 기술 | 버전/비고 |
+|---|---|
+| TypeScript | - |
+| Next.js (App Router) | v14 |
+| Tailwind CSS | - |
+| shadcn/ui | - |
+| Framer Motion | - |
+| Zustand | 전역 상태 관리 |
+| TanStack Query | 서버 상태/캐싱 |
+| Server-Sent Events / WebSocket (socket.io) | 실시간 통신 |
+| next-pwa / Web Push API | PWA 및 대기열 알림 |
+| NextAuth.js | 학교 이메일 기반 OAuth / 매직 링크 |
 
-- 하나
-  - 둘
-```
-* 하나
-  * 둘
+#### Backend
+| 기술 | 버전/비고 |
+|---|---|
+| Node.js | v20 |
+| Next.js API Routes / NestJS | - |
+| PostgreSQL (Supabase) | 식당/대기열/사용자 데이터 |
+| Redis (Upstash) | 실시간 대기열 카운터 |
+| Vercel | FE + API 인프라 |
+| Supabase | DB + Auth |
 
-+ 하나
-  + 둘
+#### AI 도구 활용
+| 도구 | 활용 범위 |
+|---|---|
+| Cursor | 메인 IDE, 컴포넌트 보일러플레이트·API 라우트·타입 정의 자동 생성 |
+| GitHub Copilot | 반복적인 데이터 처리 로직 및 API 연동 코드 자동 완성 |
+| Claude Code | 디버깅 시 stack trace 분석 및 리팩토링 |
+| Claude / ChatGPT | 기획·UX 카피·QA 시나리오 작성 |
+| Midjourney / DALL-E | 앱 아이콘, 식당 일러스트, 마케팅 이미지 |
+| OpenAI GPT-4o-mini API | 메뉴 자연어 검색 / 챗봇 기능 구현 |
+| 자체 시계열 모델 / LLM | 혼잡도 예측 |
 
-- 하나
-  - 둘
-<br />
+#### 협업/배포/품질
+| 기술 | 용도 |
+|---|---|
+| GitHub (GitFlow) | 형상관리 |
+| GitHub Projects / Notion | 이슈·태스크 관리 |
+| GitHub Actions → Vercel | CI/CD 자동 배포 |
+| ESLint / Prettier / Husky | 코드 품질 (pre-commit 자동 포맷팅) |
+| Vitest / React Testing Library | 단위 테스트 |
+| Playwright | E2E 핵심 플로우 자동화 |
+| Sentry / Vercel Analytics | 오류 추적 및 모니터링 |
+| Figma | 와이어프레임 → 프로토타입 → 핸드오프 |
 
-### 4.4. 코드 CodeBlock
-* 코드 블럭 이용 '``'
-```
-여러줄 주석 "```" 이용
-"```
-#include <stdio.h>
-int main(void){
-  printf("Hello world!");
-  return 0;
-}
-```"
+---
 
-단어 주석 "`" 이용
-"`Hello world`"
+## 3. 개발결과
 
-* 큰 따옴표(") 없이 사용하세요.
-``` 
-<br />
+### 3.1. 전체시스템 흐름도
 
-### 4.5. 링크 Link
-```
-[Title](link)
-[부산대학교 AI융합교육원](https://swedu.pusan.ac.kr/swedu/index.do)
+> (전체 시스템 흐름도 이미지 추가 예정)
 
-<link>
-<https://swedu.pusan.ac.kr>
-``` 
-[부산대학교 AI융합교육원](https://swedu.pusan.ac.kr)
+### 3.2. 기능설명
 
-<https://swedu.pusan.ac.kr>  
-<br />
+> (각 페이지 별 기능 설명 및 시연 영상 추가 예정)
 
-### 4.6. 강조 Highlighting
-```
-*single asterisks*
-_single underscores_
-**double asterisks**
-__double underscores__
-~~cancelline~~<img width="1994" height="253" alt="KakaoTalk_20260520_160616446_01" src="https://github.com/user-attachments/assets/9269b8bd-7539-4120-a97c-705f96fd5e71" />
+**학생 앱 주요 플로우**
+1. 학교 이메일 인증 후 로그인
+2. 메인 화면에서 학생식당 / 주변 식당 실시간 대기 현황 확인
+3. 학식 선택 → 모바일 식권 구매 → QR 대기번호 발급
+4. 제휴 식당 선택 → 원격 웨이팅 등록 → 알림 수신
+
+**운영자 대시보드 주요 플로우**
+1. 운영자 로그인
+2. 실시간 대기자 수 확인 및 호출 번호 관리
+3. 메뉴 / 운영 정보 등록·수정
+4. 시간대별 이용 현황 및 방문자 통계 확인
+
+### 3.3. 기능명세서
+
+> (기능명세서 링크 또는 문서 추가 예정)
+
+### 3.4. 디렉토리 구조
 
 ```
-*single asterisks* <br />
-_single underscores_ <br />
-**double asterisks** <br />
-__double underscores__ <br />
-~~cancelline~~  <br />
-<br />
+pnuai-c-06/
+├── app/                  # Next.js App Router
+│   ├── (auth)/           # 인증 관련 라우트
+│   ├── (student)/        # 학생용 화면
+│   ├── (admin)/          # 운영자 대시보드
+│   └── api/              # API Routes
+├── components/           # 공통 UI 컴포넌트
+├── lib/                  # 유틸리티 및 외부 연동
+│   ├── supabase/         # Supabase 클라이언트
+│   ├── redis/            # Upstash Redis 연동
+│   └── ai/               # OpenAI API 연동
+├── store/                # Zustand 전역 상태
+├── types/                # TypeScript 타입 정의
+├── docs/                 # 보고서 및 발표자료
+└── public/               # 정적 파일
+```
 
-### 4.7. 이미지 Image
+### 3.5. AI 도구 활용
+
+#### 업무 효율성 향상
+
+- **신속한 프로토타이핑:** ChatGPT를 활용하여 주요 화면 UI 컴포넌트 구조와 Supabase 보안 규칙(RLS) 초안을 생성하여 개발 시간 단축
+- **코드 자동완성:** GitHub Copilot을 사용하여 반복적인 데이터 처리 로직 및 API 연동 코드를 신속하게 작성
+
+#### 프로젝트 품질 향상
+
+- **로직 검증 및 디버깅:** 실시간 대기열 처리 중 발생할 수 있는 데이터 충돌(Race Condition) 문제를 AI를 통해 사전 분석하고 해결 방안 도출
+- **데이터 분석 알고리즘:** 평균 식사 시간 계산 로직 및 머신러닝 기반 혼잡도 예측 모델의 구조 설계를 AI 코딩 도구로 보완
+- **UI/UX 개선:** Figma AI를 활용하여 대기 현황 시각화 레이아웃과 관리자 대시보드 시안 제작
+
+---
+
+## 4. 설치 및 사용 방법
+
+### 사전 요구사항
+
+- Node.js v20 이상
+- npm 또는 pnpm
+- Supabase 프로젝트 (DB + Auth)
+- Upstash Redis 인스턴스
+
+### 설치
+
+```bash
+git clone https://github.com/pnuai/pnuai-c-06.git
+cd pnuai-c-06
+npm install
 ```
-<img src="/path/to/img.jpg" width="600px" title="Title" alt="Alt text"></img>
-![Alt text](/path/to/img.jpg "Optional title")
+
+### 환경변수 설정
+
+`.env.local` 파일을 생성하고 아래 환경변수를 설정하세요.
+
+```env
+NEXT_PUBLIC_SUPABASE_URL=your_supabase_url
+NEXT_PUBLIC_SUPABASE_ANON_KEY=your_supabase_anon_key
+SUPABASE_SERVICE_ROLE_KEY=your_service_role_key
+UPSTASH_REDIS_REST_URL=your_upstash_url
+UPSTASH_REDIS_REST_TOKEN=your_upstash_token
+OPENAI_API_KEY=your_openai_api_key
+NEXTAUTH_SECRET=your_nextauth_secret
 ```
-<img src="https://github.com/user-attachments/assets/3c717ecf-6e22-487b-ae12-72d11e8af5ff" width="600px" title="부산대학교 AI융합교육원" alt="부산대학교 AI융합교육원"></img>
-<br/>
-![부산대학교 AI융합교육원](https://github.com/user-attachments/assets/3c717ecf-6e22-487b-ae12-72d11e8af5ff "부산대학교 AI융합교육원")
-<br/>
+
+### 실행
+
+```bash
+# 개발 서버
+npm run dev
+
+# 빌드
+npm run build
+
+# 프로덕션 실행
+npm start
+```
+
+---
+
+## 5. 소개 및 시연 영상
+
+> (프로젝트 소개 동영상을 swedu@pusan.ac.kr 제출 후 YouTube URL 추가 예정)
+
+---
+
+## 6. 팀 소개
+
+| 역할 | 이름 | 학부(과) | 전공 | 학번 | 연락처 |
+|---|---|---|---|---|---|
+| 팀장 (PM, 총괄, AI data 테스트) | 권지효 | 전기전자공학부 | 전기공학과 | 202429105 | cofls0103@pusan.ac.kr |
+| 팀원 (기획, AI data 분석) | 한지양 | 전기전자공학부 | 전자공학과 | 202324266 | sheis21030@pusan.ac.kr |
+| 팀원 (프론트엔드) | 유동훈 | 정보컴퓨터공학부 | 컴퓨터공학전공 | 202355561 | ehdgns1083@pusan.ac.kr |
+| 팀원 (백엔드) | 조우진 | 정보컴퓨터공학부 | 컴퓨터공학전공 | 202355583 | bswoojin@gmail.com |
+| 팀원 (database, 디버깅) | 박강현 | 정보컴퓨터공학부 | 컴퓨터공학전공 | 202455337 | ks922324@pusan.ac.kr |
+
+### 팀원별 보유 역량
+
+<details>
+<summary>권지효 (팀장)</summary>
+
+- 부산대학교 제67대 공과대학 학생회 사무국장 활동 (조직 운영, 행정 실무, 협업 경험)
+- PNU 반도체 윈터스쿨 수료
+- PNU-BNUE 스타트업 리버스 캠프 및 아이디어톤 참여
+- 부산공유대학 3D 프린팅 팀장, 동력발전장치 제작
+- 아두이노 활용 반려식물 자율 케어 시스템 개발 (임베디드 시스템 설계)
+- **Languages:** C, C++, Python
+- **Tools:** Cura, PSpice, Arduino
+
+</details>
+
+<details>
+<summary>한지양 (기획, AI data 분석)</summary>
+
+- 서울대 핵융합 VEST 발표 대상
+- 키사이트테크놀로지스 코리아 widegap 전력 반도체 소자 key parameter 향상 연구 우수상
+- 미래 DX 리빙솔루션 장려상
+- IoT 캡스톤 디자인 경진대회 수상
+- 반도체(IGZO, Oxide Thin Film Transistor) 연구 인턴 6개월
+- 한미첨단분야 KIAT 선발 차세대반도체 뉴욕시립대 교환학생 6개월
+- **Languages:** C, C++, Python
+- **Tools:** PSpice, Arduino
+
+</details>
+
+<details>
+<summary>유동훈 (프론트엔드)</summary>
+
+- ZCU 보드 회로 설계 및 하드웨어 디버깅 경험
+- CI/CD 스케줄링 및 개발 환경 운영 (빌드·테스트·배포 파이프라인 자동화)
+- 아두이노 기반 실내 미세먼지·습도 측정기 제작 (IoT 프로젝트)
+- **Languages:** C, C++, Python
+- **Tools:** Git / GitHub
+
+</details>
+
+<details>
+<summary>조우진 (백엔드)</summary>
+
+- 시스템 소프트웨어 및 논리회로 설계 학습 (하드웨어-소프트웨어 인터페이스 구조 이해)
+- C++ 기반 가상 뱅킹 트랜잭션 시스템 아키텍처 설계 (OOP)
+- Firebase (Firestore, Auth, FCM) 기반 서버리스 환경 활용
+- 관광 데이터 활용 공모전 참가
+- **Languages:** C, C++, Python
+- **Backend & Infrastructure:** Firebase, Git / GitHub
+
+</details>
+
+<details>
+<summary>박강현 (database, 디버깅)</summary>
+
+- Jetpack Compose 기반 모바일 UI 인터랙션 설계 (apptive 개발동아리)
+- C++ 기반 가상 뱅킹 트랜잭션 시스템 아키텍처 설계 (OOP)
+- 임베디드 제어 기반 화재 감지 및 자동 경보 시스템 구축
+- Tetris Game Engine 및 게임 로직 구현 (알고리즘 최적화)
+- **Languages:** C, C++, Python
+- **Mobile:** Kotlin, Android Jetpack Compose
+- **Tools:** Git / GitHub
+
+</details>
+
+---
+
+## 7. 해커톤 참여 후기
+
+> (해커톤 종료 후 팀원별 참여 후기 추가 예정)
